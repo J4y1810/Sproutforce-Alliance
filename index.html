@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sproutforce Alliance</title>
+  <meta name="description" content="Sproutforce Alliance studies how adding magnesium, zinc and protein to the growing water affects the nutritional value of mung bean sprouts." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Sproutforce Alliance home">
+        <img src="favicon.svg" alt="" width="28" height="28" />
+        <span>Sproutforce Alliance</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#nutrients">Nutrients</a>
+        <a href="#method">Method</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Student research project</p>
+          <h1>Growing more <em>nutritious</em> mung bean sprouts.</h1>
+          <p class="lead">
+            We're testing whether adding magnesium, zinc and protein to the water
+            mung beans sprout in can raise the nutritional value of the sprouts themselves.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#method">See our method</a>
+            <a class="btn btn-ghost" href="#team">Meet the team</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 320 320" class="sprout-svg">
+            <circle cx="160" cy="160" r="150" class="art-bg" />
+            <path class="stem" d="M160 270 C 160 220, 150 190, 165 140 S 175 90, 160 70" />
+            <path class="leaf leaf-l" d="M160 72 C 120 60, 100 30, 110 10 C 140 18, 160 40, 160 72 Z" />
+            <path class="leaf leaf-r" d="M160 72 C 200 60, 220 30, 210 10 C 180 18, 160 40, 160 72 Z" />
+            <ellipse class="bean" cx="160" cy="272" rx="26" ry="18" />
+            <path class="root" d="M150 288 C 140 300, 130 305, 120 312" />
+            <path class="root" d="M168 289 C 175 300, 185 306, 196 311" />
+            <g class="particles">
+              <circle cx="70" cy="200" r="16" class="p p-mg" /><text x="70" y="205">Mg</text>
+              <circle cx="250" cy="190" r="16" class="p p-zn" /><text x="250" y="195">Zn</text>
+              <circle cx="235" cy="110" r="16" class="p p-pr" /><text x="235" y="115">Pr</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">About the project</p>
+          <h2>A cheap, everyday food with room to grow.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Mung bean sprouts are inexpensive, fast to grow and eaten widely across Asia.
+            Because a sprout draws everything it needs from the water around it during germination,
+            the growing solution is a simple place to intervene.
+          </p>
+          <p>
+            <strong>Sproutforce Alliance</strong> is investigating how effective it is to enrich that
+            water with specific nutrients, and whether the sprouts take those nutrients up in a way
+            that meaningfully increases their nutritional value.
+          </p>
+          <div class="question-card">
+            <span class="q-label">Research question</span>
+            <p>
+              How does adding magnesium, zinc or protein to the water solution used to grow
+              mung bean sprouts affect the nutritional value of the sprouts?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutrients -->
+    <section id="nutrients" class="section section-tint">
+      <div class="container">
+        <p class="eyebrow">What we're adding</p>
+        <h2>Three nutrients, tested one at a time.</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="chip chip-mg">Mg</div>
+            <h3>Magnesium</h3>
+            <p>
+              A mineral involved in hundreds of enzyme reactions in the body, and at the centre of
+              the chlorophyll molecule in plants.
+            </p>
+          </article>
+          <article class="card">
+            <div class="chip chip-zn">Zn</div>
+            <h3>Zinc</h3>
+            <p>
+              A trace mineral important for immune function and growth, and a common deficiency in
+              diets that rely heavily on staple crops.
+            </p>
+          </article>
+          <article class="card">
+            <div class="chip chip-pr">Pr</div>
+            <h3>Protein</h3>
+            <p>
+              The macronutrient that builds and repairs tissue. We're testing whether protein in the
+              growing water changes the protein content of the sprouts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section id="method" class="section">
+      <div class="container">
+        <p class="eyebrow">How we're testing it</p>
+        <h2>Our approach.</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <div>
+              <h3>Prepare the solutions</h3>
+              <p>Each batch of mung beans is grown in water enriched with a single nutrient — magnesium, zinc or protein — alongside a control batch grown in plain water.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <div>
+              <h3>Grow the sprouts</h3>
+              <p>All batches are sprouted under the same conditions so the growing solution is the only thing that differs between them.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <div>
+              <h3>Measure and compare</h3>
+              <p>We measure the nutrient content of each batch and compare it against the control to see whether, and by how much, enrichment made a difference.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <div>
+              <h3>Write it up</h3>
+              <p>Our findings from the single-nutrient tests are going into a research paper, which we're drafting now.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section section-tint">
+      <div class="container">
+        <p class="eyebrow">Where we are</p>
+        <h2>Project roadmap.</h2>
+        <div class="timeline">
+          <div class="phase is-current">
+            <div class="phase-dot"></div>
+            <span class="badge">In progress</span>
+            <h3>Phase 1 · Single-nutrient testing</h3>
+            <p>Testing magnesium, zinc and protein individually to see how each one affects the sprouts on its own.</p>
+          </div>
+          <div class="phase is-current">
+            <div class="phase-dot"></div>
+            <span class="badge">In progress</span>
+            <h3>Research paper</h3>
+            <p>Drafting a paper that documents our method and the results of the individual nutrient tests.</p>
+          </div>
+          <div class="phase">
+            <div class="phase-dot"></div>
+            <span class="badge badge-muted">Planned</span>
+            <h3>Phase 2 · Multi-nutrient testing</h3>
+            <p>Combining nutrients in the same growing solution to see how they interact, and whether a combination works better than any one alone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <p class="eyebrow">See the work</p>
+        <h2>Gallery.</h2>
+
+        <video class="project-video" controls preload="metadata" playsinline>
+          <source src="media/project-video.mp4" type="video/mp4" />
+          Your browser can't play this video.
+        </video>
+
+        <h3 class="gallery-heading">In the lab</h3>
+        <div class="gallery">
+          <button class="shot"><img src="media/photo-15.jpg" alt="Test tubes of nutrient solutions in a wooden rack" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-16.jpg" alt="Team member behind a row of beakers of solution" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-14.jpg" alt="Two team members working at a lab bench" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-17.jpg" alt="Team member at a lab sink with sprouts on a cutting board" loading="lazy" /></button>
+        </div>
+
+        <h3 class="gallery-heading">Out of the lab</h3>
+        <div class="gallery">
+          <button class="shot"><img src="media/photo-01.jpg" alt="Team seated around a meeting table facing a large screen" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-09.jpg" alt="Team writing on sticky notes during a presentation" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-05.jpg" alt="Team writing on sticky notes at a curved table" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-12.jpg" alt="Sticky notes arranged on a flip chart" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-03.jpg" alt="Team talking around a meeting table" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-08.jpg" alt="Team at a meeting table with sticky notes" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-02.jpg" alt="Team member at the table with snacks" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-13.jpg" alt="Team member seated beside bottled water" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-11.jpg" alt="Team listening to a guide in an office" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-06.jpg" alt="Team listening to a guide beside a display screen" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-07.jpg" alt="Team standing with a guide in an office lounge" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-04.jpg" alt="Team walking through a glass-walled corridor" loading="lazy" /></button>
+          <button class="shot"><img src="media/photo-10.jpg" alt="Team member walking down an office corridor" loading="lazy" /></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section section-tint">
+      <div class="container">
+        <p class="eyebrow">The people behind it</p>
+        <h2>Meet the Alliance.</h2>
+        <ul class="team">
+          <li class="member"><span class="avatar">TT</span><span class="name">Theodore Tjugiarto</span></li>
+          <li class="member"><span class="avatar">JK</span><span class="name">Jayden Katuari</span></li>
+          <li class="member"><span class="avatar">JL</span><span class="name">Jonathan Cornelius Lai</span></li>
+          <li class="member"><span class="avatar">DS</span><span class="name">David Sudirman</span></li>
+          <li class="member"><span class="avatar">IY</span><span class="name">Ian Tristan Yoncer</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="brand brand-small"><img src="favicon.svg" alt="" width="20" height="20" /> Sproutforce Alliance</span>
+      <span>&copy; <span id="year">2026</span> Sproutforce Alliance. Research in progress.</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Enlarged photo">
+    <button class="lightbox-close" aria-label="Close photo">&times;</button>
+    <img alt="" />
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
